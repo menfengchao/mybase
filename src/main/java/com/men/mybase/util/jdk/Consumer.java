@@ -6,8 +6,8 @@ public class Consumer implements Runnable {
     // 延时队列 ,消费者从其中获取消息进行消费
     private DelayQueue<Message> queue;
 
-    public Consumer(DelayQueue<Message> queue) {
-        this.queue = queue;
+    public Consumer() {
+        this.queue = DelayDequeMain.queue;
     }
 
     @Override
