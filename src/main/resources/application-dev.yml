@@ -20,6 +20,4 @@ spring:
             min-evictable-idle-time-millis: 300000
             connection-init-sqls: ["SET NAMES utf8mb4 COLLATE utf8mb4_unicode_ci"]
 
-    jpa:
-        show-sql: true
 
