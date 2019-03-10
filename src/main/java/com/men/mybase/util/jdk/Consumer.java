@@ -16,6 +16,7 @@ public class Consumer implements Runnable {
             try {
                 Message take = queue.take();
                 System.out.println("消费消息id：" + take.getId() + " 消息体：" + take.getBody());
+                Thread.sleep(1000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
