@@ -12,13 +12,13 @@ public class Consumer implements Runnable {
 
     @Override
     public void run() {
-        while (true) {
+        do {
             try {
                 Message take = queue.take();
                 System.out.println("消费消息id：" + take.getId() + " 消息体：" + take.getBody());
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-        }
+        } while (!queue.isEmpty());
     }
 }
