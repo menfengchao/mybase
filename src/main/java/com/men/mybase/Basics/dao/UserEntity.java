@@ -13,6 +13,7 @@ public class UserEntity {
     @GeneratedValue
     private String id;
 
+
     @Column
     private String name;
 
