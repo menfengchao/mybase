@@ -1,4 +1,4 @@
-package com.men.mybase.util.jdk;
+package com.men.mybase.util.jdk.jdk;
 
 import org.springframework.stereotype.Component;
 
